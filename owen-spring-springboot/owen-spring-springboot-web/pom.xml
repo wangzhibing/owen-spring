@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.owen.spring.springboot</groupId>
+		<artifactId>owen-spring-springboot-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>owen-spring-springboot-web</artifactId>
+	<groupId>com.owen.spring.springboot.web</groupId>
+	<packaging>war</packaging>
+	<name>owen-spring-springboot-web</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+			<version>1.1.2.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.miz.product.project</groupId>
+			<artifactId>product-center-project-service-logic</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+	<!--build -->
+	<build>
+		<finalName>springbootweb</finalName>
+		<plugins>
+			<plugin>
+				<groupId>com.alibaba.citrus.tool</groupId>
+				<artifactId>autoconfig-maven-plugin</artifactId>
+				<version>1.2</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<userProperties>${autoconfig.path}/${autoconfig.file}</userProperties>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>autoconfig</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+
+
+</project>
