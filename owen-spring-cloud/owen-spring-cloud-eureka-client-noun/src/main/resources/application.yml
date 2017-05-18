@@ -1,0 +1,13 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8010/eureka/
+
+words: 饭,路,歌,山
+
+server:
+  port: 8003
+  contextPath: /clientNoun
+spring:
+  application:
+    name: eureka-client-noun

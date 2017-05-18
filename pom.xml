@@ -99,7 +99,8 @@
 	</build>
 
 	<modules>
-		<module>owen-spring-springboot</module>
+		<module>owen-spring-boot</module>
+		<module>owen-spring-cloud</module>
 	</modules>
 
 </project>

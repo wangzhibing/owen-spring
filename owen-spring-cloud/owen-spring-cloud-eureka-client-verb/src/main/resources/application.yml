@@ -1,0 +1,13 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8010/eureka/
+
+words: 吃,走,说,唱
+
+server:
+  port: 8002
+  contextPath: /clientVerb
+spring:
+  application:
+    name: eureka-client-verb

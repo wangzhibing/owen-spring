@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<group>
+		<property name="words" defaultValue="VeryGoog,VeryYoung"
+			description="词" />
+		<property name="server.port" defaultValue="8005" description="短口" />
+		<property name="server.contextPath" defaultValue="/clientAdjective"
+			description="contextPath" />
+	</group>
+	<script>
+		<generate template="application.properties.vm" destfile="WEB-INF/classes/application.properties"></generate>
+	</script>
+</config>

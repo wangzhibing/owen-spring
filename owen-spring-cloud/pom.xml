@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- <parent>
+		<groupId>com.owen.spring</groupId>
+		<artifactId>owen-spring-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent> -->
+
+	<groupId>com.owen.spring.cloud</groupId>
+	<artifactId>owen-spring-cloud-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<dependencies>
+		
+	</dependencies>
+
+	<modules>
+		<module>owen-spring-cloud-eureka-client-adjective</module>
+		<module>owen-spring-cloud-eureka-client-article</module>
+		<module>owen-spring-cloud-eureka-client-instance</module>
+		<module>owen-spring-cloud-eureka-client-noun</module>
+		<module>owen-spring-cloud-eureka-client-subject</module>
+		<module>owen-spring-cloud-eureka-client-verb</module>
+		<module>owen-spring-cloud-eureka-server</module>
+	</modules>
+</project>
