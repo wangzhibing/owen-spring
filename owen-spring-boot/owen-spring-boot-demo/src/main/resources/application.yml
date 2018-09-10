@@ -1,0 +1,58 @@
+spring:
+  application:
+    name: springBootDemo
+  http:
+    encoding.charset: UTF-8
+    encoding.enable: true
+    encoding.force: true
+  mvc:
+    view.prefix: /WEB-INF/ftl/
+    view.suffix: .ftl
+
+server:
+  contextPath: /${spring.application.name}
+  port: 8090
+
+datasource:
+  master:
+    host: localhost
+    port: 3306
+    db: test
+    username: root
+    password:
+    filters: config,stat
+    connectionProperties: config.decrypt=false
+    mappersPath: com.owen.spring.boot.demo.dao.mapper
+    maxActive: 100
+    initialSize: 20
+    maxIdle: 20
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 3000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    maxPoolPreparedStatementPerConnectionSize: 20
+  slave:
+    host: localhost
+    port: 3306
+    db: test
+    username: root
+    password:
+    filters: config,stat
+    connectionProperties: config.decrypt=false
+    mappersPath: com.owen.spring.boot.demo.dao.mapper
+    maxActive: 100
+    initialSize: 20
+    maxIdle: 20
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 3000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    maxPoolPreparedStatementPerConnectionSize: 20

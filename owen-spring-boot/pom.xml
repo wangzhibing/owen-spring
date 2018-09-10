@@ -20,5 +20,6 @@
 
 	<modules>
 		<module>owen-spring-boot-web</module>
+		<module>owen-spring-boot-demo</module>
 	</modules>
 </project>

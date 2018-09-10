@@ -20,7 +20,7 @@ import org.springframework.context.annotation.Configuration;
 @SpringBootApplication 如果我们的项目和Spring Boot建议的代码结构一样，Application类放在根包路径下。那么我们可以使用@SpringBootApplication来代替上面三个注解。
  */
 @Configuration
-@ComponentScan(basePackages = "com.owen.springbootweb")
+@ComponentScan(basePackages = "com.owen.spring.boot.web")
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class}) 
 public class SpringBootWebApplication extends SpringBootServletInitializer implements EmbeddedServletContainerCustomizer {  
   

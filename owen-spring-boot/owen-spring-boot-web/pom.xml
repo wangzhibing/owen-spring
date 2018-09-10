@@ -25,35 +25,30 @@
 			<version>1.1.2.RELEASE</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.miz.product.project</groupId>
-			<artifactId>product-center-project-service-logic</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 
 	<!--build -->
 	<build>
 		<finalName>springbootweb</finalName>
-		<plugins>
-			<plugin>
-				<groupId>com.alibaba.citrus.tool</groupId>
-				<artifactId>autoconfig-maven-plugin</artifactId>
-				<version>1.2</version>
-				<configuration>
-					<encoding>UTF-8</encoding>
-					<userProperties>${autoconfig.path}/${autoconfig.file}</userProperties>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>autoconfig</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
+		<!--<plugins>-->
+			<!--<plugin>-->
+				<!--<groupId>com.alibaba.citrus.tool</groupId>-->
+				<!--<artifactId>autoconfig-maven-plugin</artifactId>-->
+				<!--<version>1.2</version>-->
+				<!--<configuration>-->
+					<!--<encoding>UTF-8</encoding>-->
+					<!--<userProperties>${autoconfig.path}/${autoconfig.file}</userProperties>-->
+				<!--</configuration>-->
+				<!--<executions>-->
+					<!--<execution>-->
+						<!--<phase>package</phase>-->
+						<!--<goals>-->
+							<!--<goal>autoconfig</goal>-->
+						<!--</goals>-->
+					<!--</execution>-->
+				<!--</executions>-->
+			<!--</plugin>-->
+		<!--</plugins>-->
 	</build>
 
 

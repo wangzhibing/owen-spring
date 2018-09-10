@@ -6,6 +6,6 @@ import com.owen.spring.boot.web.pojo.dataobject.UserDO;
 
 public interface UserService {
     
-    public List<UserDO> queryUser();
+    List<UserDO> queryUser();
 
 }

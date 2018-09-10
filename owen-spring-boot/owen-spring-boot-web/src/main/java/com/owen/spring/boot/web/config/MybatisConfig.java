@@ -21,7 +21,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @Configuration
 @EnableTransactionManagement
-@MapperScan("com.owen.springbootweb.mapper")
+@MapperScan("com.owen.spring.boot.web.mapper")
 public class MybatisConfig {
 
     /**
@@ -46,7 +46,7 @@ public class MybatisConfig {
 
         // 设置数据元
         bean.setDataSource(dataSource());
-        bean.setTypeAliasesPackage("com.owen.springbootweb.pojo.dataobject");
+        bean.setTypeAliasesPackage("com.owen.spring.boot.web.pojo.dataobject");
         // 添加插件
         // bean.setPlugins(new Interceptor[] { pageHelper });
         // 添加xml目录
